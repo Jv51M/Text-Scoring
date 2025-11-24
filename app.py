@@ -2,6 +2,7 @@ import streamlit as st
 import spacy
 import regex
 import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 nlp = spacy.load('en_core_web_sm')
 Criterias = ['Language', 'Clarity & Rate', 'Content', 'Grammar', 'Speech', 'Structure', 'Engagement']
