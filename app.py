@@ -3,14 +3,7 @@ import spacy
 import regex
 import nltk
 from nltk.corpus import stopwords
-try:
-	nlp = spacy.load('en_core_web_sm')
-except OSError:
-    print("Downloading language model for spaCy...")
-    from spacy.cli import download
-    download('en_core_web_sm')
-    nlp = spacy.load('en_core_web_sm')
-    
+nlp = spacy.load('en_core_web_sm')
 Criterias = ['Language', 'Clarity & Rate', 'Content', 'Grammar', 'Speech', 'Structure', 'Engagement']
 
 def ContentNstructure(data):
